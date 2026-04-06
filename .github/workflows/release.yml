@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Optional: force the publish dist-tag (e.g. latest, beta, rc)"
+        required: false
+
+jobs:
+  release:
+    uses: toakiryu/workflows/.github/workflows/release.yml@v1
+    with:
+      publish: true
+      build: pnpm build
+      tag: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.tag || 'latest' }}
+    permissions:
+      contents: write
+      id-token: write

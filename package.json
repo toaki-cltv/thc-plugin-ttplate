@@ -1,0 +1,56 @@
+{
+  "name": "thc-plugin-ttplate",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Official title template plugin for tanstack-head-controller.",
+  "homepage": "https://thc.tkcl.tv/en/docs/usage",
+  "author": "toakiryu",
+  "license": "Apache-2.0",
+  "funding": "https://buymeacoffee.com/toakiryu",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toaki-cltv/thc-plugin-ttplate.git"
+  },
+  "bugs": "https://github.com/toaki-cltv/thc-plugin-ttplate/issues",
+  "keywords": [
+    "tanstack",
+    "tanstack-router",
+    "head",
+    "meta",
+    "plugin",
+    "merge"
+  ],
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "node scripts/build.ts",
+    "prepack": "pnpm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "packageManager": "pnpm@10.31.0",
+  "peerDependencies": {
+    "tanstack-head-controller": ">=0.0.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.0",
+    "@swc/cli": "^0.8.1",
+    "@swc/core": "^1.15.24",
+    "@types/node": "^24.12.2",
+    "tanstack-head-controller": "0.1.0-alpha.0",
+    "typescript": "^5.9.3"
+  }
+}
