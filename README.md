@@ -1,23 +1,28 @@
-# thc-plugin-merge
+# thc-plugin-ttplate
 
-Official merge plugin for tanstack-head-controller.
+Official title-template plugin for tanstack-head-controller.
 
-This plugin merges duplicate-like `meta` entries (same `name`) so route-level head data can be composed safely.
+This plugin appends a site name to route titles using a configurable separator.
 
 ## Installation
 
 ```bash
-pnpm add tanstack-head-controller thc-plugin-merge
+pnpm add tanstack-head-controller thc-plugin-ttplate
 ```
 
 ## Usage
 
 ```tsx
 import { createHeadController } from 'tanstack-head-controller'
-import { thcMerge } from 'thc-plugin-merge'
+import { thcTitleTemplate } from 'thc-plugin-ttplate'
 
 const thc = createHeadController({
-  plugins: [thcMerge()],
+  plugins: [
+    thcTitleTemplate({
+      siteName: 'My App',
+      separator: ' | ',
+    }),
+  ],
 })
 ```
 
