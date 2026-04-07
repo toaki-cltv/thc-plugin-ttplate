@@ -1,4 +1,4 @@
-import { createThcPlugin, type ThcPlugin } from "tanstack-head-controller/plugins";
+import { createThcPlugin, type ThcPlugin } from "@thcjs/core/plugins";
 
 export interface TitleTemplatePluginOptions {
   rank?: number;
