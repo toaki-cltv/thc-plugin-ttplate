@@ -1,7 +1,7 @@
 {
   "name": "thc-plugin-ttplate",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Official title template plugin for @thcjs/core",
   "homepage": "https://thc.tkcl.tv/en/docs/usage",
   "author": "toakiryu",
