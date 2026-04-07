@@ -1,0 +1,18 @@
+{
+  "autorun": false,
+  "terminals": [
+    {
+      "name": "root",
+      "focus": true,
+      "cwd": "."
+    },
+    {
+      "name": "docs",
+      "cwd": "./docs"
+    },
+    {
+      "name": "test-app",
+      "cwd": "./test-app"
+    },
+  ]
+}

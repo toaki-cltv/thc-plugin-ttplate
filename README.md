@@ -1,13 +1,13 @@
 # thc-plugin-ttplate
 
-Official title-template plugin for tanstack-head-controller.
+Official title template plugin for `@thcjs/core`.
 
 This plugin appends a site name to route titles using a configurable separator.
 
 ## Installation
 
 ```bash
-pnpm add tanstack-head-controller thc-plugin-ttplate
+pnpm add @thcjs/core thc-plugin-ttplate
 ```
 
 ## Usage

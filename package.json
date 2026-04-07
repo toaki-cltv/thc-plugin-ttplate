@@ -2,10 +2,10 @@
   "name": "thc-plugin-ttplate",
   "type": "module",
   "version": "0.0.1",
-  "description": "Official title template plugin for tanstack-head-controller.",
+  "description": "Official title template plugin for @thcjs/core",
   "homepage": "https://thc.tkcl.tv/en/docs/usage",
   "author": "toakiryu",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "funding": "https://buymeacoffee.com/toakiryu",
   "sideEffects": false,
   "main": "./dist/index.js",
@@ -44,14 +44,14 @@
   },
   "packageManager": "pnpm@10.31.0",
   "peerDependencies": {
-    "tanstack-head-controller": ">=0.0.1"
+    "@thcjs/core": ">=0.1.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.0",
     "@swc/cli": "^0.8.1",
     "@swc/core": "^1.15.24",
     "@types/node": "^24.12.2",
-    "tanstack-head-controller": "0.1.0-alpha.0",
+    "@thcjs/core": "0.1.0",
     "typescript": "^5.9.3"
   }
 }
